@@ -1,0 +1,89 @@
+.container__sayhello {
+    @apply flex justify-center items-center pt-[120px]
+}
+
+.text__sayhello {
+    @apply m-2 text-white
+}
+
+.text__sayhello h1 {
+    font-family: 'Rubik Burned', cursive;
+    @apply text-3xl text-yellow-100 left-[287px] top-[230px] underline
+}
+#light .text__sayhello h1 {
+    @apply text-green-100
+}
+
+.text__sayhello p {
+    font-family: 'Kelly Slab', cursive;
+    @apply w-[500px] text-xl pt-10
+}
+#light .text__sayhello p {
+    @apply text-gray-800
+}
+
+.avatar__sayhello {
+    @apply bg-transparent w-[400px] h-[400px] bottom-60
+}
+
+.avatar__sayhello img {
+    @apply rounded-full
+}
+
+.btn__sayhello {
+    font-family: 'Kelly Slab', cursive;
+}
+#light .btn__sayhello button {
+    @apply hover:bg-gray-800 hover:text-pink-100
+}
+
+@media (max-width: 1060px) {
+    .text__sayhello h1 {
+        @apply w-[400px]
+    }
+    .text__sayhello p {
+        @apply w-[350px]
+    }
+}
+
+@media (max-width: 920px) {
+    .avatar__sayhello {
+        @apply w-[400px] h-[400px]
+    }
+}
+
+@media (max-width: 815px) {
+    .avatar__sayhello {
+        @apply w-[100px] h-[100px] absolute top-[130px]
+    }
+    .container {
+        @apply flex-col-reverse
+    }
+    .text__sayhello h1 {
+        @apply text-center
+    }
+    .text__sayhello p {
+        @apply text-center flex mx-auto
+    }
+    .btn__sayhello {
+        @apply flex justify-center
+    }
+
+}
+
+@media (max-width: 420px) {
+    .text__sayhello h1 {
+        @apply text-xl
+    }
+    .text__sayhello p {
+        @apply text-lg
+    }
+}
+@media (max-width: 400px) {
+    .text__sayhello h1 {
+        @apply w-[320px]
+    }
+    .text__sayhello p {
+        @apply w-[320px]
+    }
+}

@@ -1,0 +1,23 @@
+.langBtn {
+    @apply w-[50px] p-1
+}
+
+.btnLangGroup {
+    @apply flex flex-col absolute translate-y-[-300%] transition-all ease-in-out bg-stone-800 z-50
+    top-[60px] right-[0px]
+}
+#light .btnLangGroup {
+    @apply bg-green-100 
+}
+
+.btnLangGroup.clickBtn {
+    @apply translate-y-[0%] bg-stone-500 rounded-sm
+}
+.flagsImg {
+    @apply w-[50px] rounded-lg
+}
+@media (max-width: 1087px) {
+    .btnLangGroup {
+        @apply right-[70px]
+    }
+}

@@ -1,0 +1,100 @@
+body {
+    @apply bg-stone-800 text-xl
+}
+.langIcon__navbar {
+    @apply flex text-xl cursor-pointer pt-[1px]
+}
+
+.container__navbar {
+    @apply bg-stone-800 flex justify-evenly items-center text-white opacity-80
+} 
+#light .container__navbar {
+    @apply bg-green-100
+}
+.h1__navbar {
+    font-family: 'Rubik Burned', cursive;
+    @apply flex items-center text-yellow-100 text-3xl
+}
+#light .h1__navbar {
+    @apply text-green-600
+}
+
+#light li,
+#light .btn__navbar button,
+#light .langIcon__navbar  {
+    @apply text-gray-800 hover:text-gray-500 transition-all ease-in-out
+}
+ul {
+    @apply flex  
+}
+.lang {
+    @apply flex relative items-center text-2xl bottom-[12px]
+}
+ul.active {
+    @apply -translate-y-[0px]
+}
+li {
+    font-family: 'Kelly Slab', cursive;
+    @apply cursor-pointer text-white hover:text-gray-300 transition-all ease-in-out m-3 hover:underline
+}
+.btn__navbar button {
+    @apply hover:text-gray-300 m-5
+}
+#light .btn__navbar button {
+    @apply text-gray-800
+}
+.btn__close {
+    @apply text-white
+}
+.btn__gamb {
+    @apply hidden
+}
+@media (max-width: 1087px) {
+    .btn__navbar button, li {
+        @apply hidden
+    }
+    div .langIcon__navbar {
+        @apply hidden
+    }
+    .btn__gamb {
+        @apply flex !important
+    }
+    .container__navbar {
+        @apply justify-around
+    }
+}
+@media (max-width: 1024px) {
+    ul {
+        @apply hidden
+    }
+    .btn__gamb {
+        @apply inline
+    }
+}
+@media (max-width: 610px) {
+    .h1__navbar h1 {
+        @apply text-2xl
+    }
+    .container__navbar {
+        @apply flex-wrap
+    }
+}
+@media (max-width: 420px) {
+
+    .container__navbar {
+        @apply justify-evenly
+    }
+}
+@media (max-width: 375px) {
+    .h1__navbar h1 {
+        @apply text-xl
+    }
+    .btn__gamb {
+        @apply flex 
+    }
+}
+@media (max-width: 350px) {
+    .btn__gamb {
+        @apply flex 
+    }
+}

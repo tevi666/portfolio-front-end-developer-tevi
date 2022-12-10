@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flags {
+    position: absolute;
+    padding-top: 20px;
+}
+
+.container__preloader {
+    @apply h-screen relative flex justify-center items-center
+}
+.gridLoader {
+    @apply flex items-center absolute
+}

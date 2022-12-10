@@ -1,0 +1,43 @@
+.container__contacts {
+    @apply pt-[150px]
+}
+.h1__contacts {
+    font-family: 'Rubik Burned', cursive;
+    @apply flex justify-center mb-[10px] ml-[-10px] text-5xl text-yellow-100
+}
+#light .h1__contacts {
+    @apply text-green-100
+}
+.btn__conts{
+    @apply hover:text-gray-300 text-white transition-all ease-in-out
+}
+.a__contact {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-white hover:text-gray-300 transition-all ease-in-out hover:underline
+}
+#light .a__contact {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-gray-800 hover:text-gray-500 transition-all ease-in-out
+}
+.cont__1 {
+    @apply flex justify-center
+}
+.cont__1 a {
+    @apply m-2
+}
+@media (max-width: 815px) {
+    .h1__contacts {
+        @apply text-3xl
+    }
+    .cont__1 {
+        @apply flex-wrap
+    }
+}
+@media (max-width: 400px) {
+    .h1__contacts {
+        @apply text-3xl flex justify-center mx-auto
+    }
+    .cont__1 {
+        @apply text-lg flex-col text-center
+    }
+}

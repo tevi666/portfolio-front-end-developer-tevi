@@ -1,0 +1,97 @@
+.container__projects__works {
+    @apply pt-[150px]
+}
+.h1__project {
+    font-family: 'Rubik Burned', cursive;
+    @apply flex justify-center ml-[-10px] text-yellow-100 text-5xl
+}
+#light .h1__project {
+    @apply text-green-100
+}
+.cards {
+    @apply flex justify-center
+}
+#light .hover {
+    @apply text-gray-800 
+}
+.card {
+    @apply w-[500px] relative cursor-pointer mt-10 flex justify-center items-center 
+}
+.hover {
+    @apply absolute text-white text-2xl flex items-center translate-x-[400%] transition-all ease-in-out opacity-0 duration-1000
+}
+.card:hover .hover {
+    font-family: 'Kelly Slab', cursive;
+    @apply underline translate-x-[0%] opacity-100 transition-all ease-in-out duration-1000
+}
+.hover:hover {
+    @apply text-green-500 
+}
+#light .hover:hover {
+    @apply text-gray-500
+}
+.card:hover .numb {
+    @apply bg-green-500 text-blue-500
+}
+#light .card:hover .numb  {
+    @apply bg-green-100 text-gray-800
+}
+.card:before {
+    content: "";
+    @apply w-[500px] h-[240px] absolute bg-black -translate-x-[200%] left-0 top-0 transition-all ease-in-out opacity-0
+}
+#light .card:before {
+    content: "";
+    @apply bg-green-100
+}
+.card:hover:before {
+    @apply -translate-x-[0%] opacity-50 
+}
+.btn__more {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-white mx-auto flex justify-center
+}
+#light .btn__more button {
+    @apply hover:bg-gray-800 hover:text-green-100
+}
+.numb {
+    font-family: 'Rubik Burned', cursive;
+    @apply w-[100px] h-[100px] absolute bg-blue-600 text-5xl -right-[45px] -top-[45px] flex justify-center items-center rounded-full drop-shadow-2xl text-white
+}
+#light .numb {
+    @apply bg-green-100 text-black
+}
+#light .card:hover .numb  {
+    @apply bg-gray-800 text-green-100
+}
+@media (max-width: 815px) {
+    .h1__project {
+        @apply text-3xl
+    }
+    .card {
+        @apply w-[300px]
+    }
+    .numb {
+        @apply w-[80px] h-[80px] text-4xl -right-[40px] -top-[40px]
+    }
+    .card:before {
+        @apply w-[300px] h-[144px]
+    }
+}
+@media (max-width: 400px) {
+    .h1__project {
+        @apply text-2xl
+    }
+    .card {
+        @apply w-[250px]
+    }
+    .card:before {
+        @apply w-[250px] h-[120px]
+    }
+    .hover {
+        @apply top-[75%]
+    }
+    .numb {
+        @apply w-[50px] h-[50px] text-3xl -right-[25px] -top-[25px]
+    }
+}

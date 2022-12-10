@@ -1,0 +1,9 @@
+.container__br {
+    @apply w-[100%] h-screen bg-opacity-80 transition-all ease-in-out fixed top-0 right-0 bg-stone-800 z-20 pt-[30px] -translate-x-[-3500px]
+}
+#light .container__br {
+    @apply bg-white bg-opacity-60
+}
+.container__br.active {
+    @apply -translate-x-[0px]
+}

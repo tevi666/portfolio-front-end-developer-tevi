@@ -1,0 +1,210 @@
+.container__form {
+    @apply pt-[150px] pb-[30px] flex justify-center p-10 items-center
+}
+
+form {
+    @apply w-[400px] relative
+}
+.clock__loader {
+    @apply flex justify-center mb-[20px] mt-[20px]
+}
+.btn__form button {
+    font-family: 'Kelly Slab', cursive;
+    @apply relative left-2 text-white rounded bg-blue-600 p-2 cursor-pointer flex items-center
+}
+
+.form__btn__icon {
+    @apply relative left-2 pr-2
+}
+
+.success {
+    font-family: 'Kelly Slab', cursive;
+    @apply flex justify-center text-green-700 rounded-lg bg-black w-[400px] items-center mx-auto opacity-80 text-center mb-[10px]
+}
+#light .success {
+    font-family: 'Kelly Slab', cursive;
+    @apply bg-green-100 opacity-50
+}
+.btn__form button:hover {
+    @apply animate-pulse bg-green-500 text-blue-500
+}
+#light .btn__form button {
+    @apply bg-green-100 text-gray-800
+}
+#light .btn__form button {
+    @apply hover:bg-gray-800 hover:text-green-100
+}
+
+.text__form .h1__form {
+    font-family: 'Rubik Burned', cursive;
+    @apply text-4xl text-yellow-100 
+}
+#light .h1__form {
+    @apply text-green-100
+}
+.text__form {
+    font-family: 'Kelly Slab', cursive;
+    @apply w-[350px]
+}
+
+.p__form {
+    font-family: 'Kelly Slab', cursive;
+    @apply w-[300px] mb-[50px]
+}
+#light .p__form {
+    @apply text-gray-800
+}
+
+.text__form p {
+    @apply text-white
+}
+
+.name__error,
+.email__error,
+.phone__error,
+.telegram__error,
+.msg__error {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-red-500 pl-2 ml-2 bg-black rounded w-[400px] opacity-80
+}
+#light .name__error,
+#light .email__error,
+#light .phone__error,
+#light .telegram__error,
+#light .msg__error {
+    @apply bg-green-100 text-gray-800
+}
+
+input,
+textarea {
+    font-family: 'Kelly Slab', cursive;
+    @apply w-[400px] rounded m-2 pl-2
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: all 0.5s;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.success__modal {
+    @apply drop-shadow-2xl bg-black opacity-90 rounded-xl top-0  flex-wrap fixed rounded-t-none
+}
+#light .success__modal {
+    @apply bg-green-100
+}
+.modal__flex {
+    @apply flex justify-center
+}
+
+@media (max-width: 749px) {
+    .container__form {
+        @apply flex-wrap pb-[75px]
+    }
+
+    .text__form .h1__form {
+        @apply text-center
+    }
+
+    .p__form {
+        @apply mx-auto text-center mb-[0px]
+    }
+
+    form {
+        @apply pt-10 right-2
+    }
+
+    .btn__form {
+        @apply flex justify-center
+    }
+    .btn__form button {
+        @apply w-[400px] flex justify-center absolute
+    }
+    .success {
+        @apply  w-[401px] relative pt-2
+    }
+
+    input,
+    textarea {
+        @apply text-center outline-none
+    }
+
+    .name__error,
+    .email__error,
+    .phone__error,
+    .telegram__error,
+    .msg__error {
+        @apply w-[400px] text-center flex justify-center items-center mx-auto relative left-2
+    }
+    .clock__loader {
+        @apply flex justify-center mt-10 mb-1
+    }
+}
+
+@media (max-width: 450px) {
+    input,
+    textarea {
+        @apply w-[350px] text-center
+    }
+    .btn__form {
+        @apply left-0
+    }
+    form {
+        @apply right-0
+    }
+    .name__error,
+    .email__error,
+    .phone__error,
+    .telegram__error,
+    .msg__error {
+        @apply w-[350px] text-center flex justify-center items-center mx-auto relative left-0
+    }
+    .btn__form button {
+        @apply w-[350px] absolute
+    }
+    .success {
+        @apply  w-[351px] relative -left-0 top-5
+    }
+    
+}
+
+
+@media (max-width: 380px) {
+
+    input,
+    textarea {
+        @apply w-[300px] text-center
+    }
+
+    .name__error,
+    .email__error,
+    .phone__error,
+    .telegram__error,
+    .msg__error {
+        @apply w-[300px] text-center flex justify-center items-center mx-auto
+    }
+    .btn__form button {
+        @apply w-[300px] absolute
+    }
+    .success {
+        @apply  w-[301px] relative -left-0 top-5
+    }
+}
+
+@media (max-width: 320px) {
+    .btn__form {
+        @apply left-0
+    }
+}

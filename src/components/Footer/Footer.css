@@ -1,0 +1,37 @@
+.container__footer {
+    @apply w-full h-[100px] bg-stone-800 opacity-80 absolute flex items-center justify-center p-5
+}
+#light .container__footer {
+    @apply bg-green-100
+}
+.p__footer {
+    font-family: 'Kelly Slab', cursive;
+    @apply absolute bottom-0 text-white text-sm
+}
+#light .p__footer {
+    @apply text-gray-800
+}
+.h1__footer {
+    font-family: 'Rubik Burned', cursive;
+    @apply text-yellow-100 text-5xl pb-7
+}
+#light .h1__footer {
+    @apply text-green-500
+}
+
+@media (max-width: 815px) {
+    .h1__footer {
+        @apply text-3xl
+    }
+}
+
+@media (max-width: 421px) {
+    .h1__footer {
+        @apply text-2xl
+    }
+}
+@media (max-width: 380px) {
+    .h1__footer {
+        @apply text-xl
+    }
+}

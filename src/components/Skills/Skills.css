@@ -1,0 +1,33 @@
+.container__skills {
+    @apply w-[96px] h-[30px] bg-blue-500 text-white rounded-full flex justify-center items-center m-2 p-2 
+}
+#light .container__skills {
+    @apply text-gray-800 bg-green-100
+}
+.supreme__container {
+    font-family: 'Kelly Slab', cursive;
+    @apply flex max-w-[70%] mx-auto flex-wrap justify-center items-center
+}
+.h1__skills h1 {
+    font-family: 'Rubik Burned', cursive;
+    @apply pt-[150px] mb-[20px] ml-[-10px] text-yellow-100 flex justify-center text-5xl
+}
+#light .h1__skills h1 {
+    @apply text-green-100
+}
+@media (max-width: 815px) {
+    .h1__skills h1 {
+        @apply text-3xl
+    }
+    .container__skills {
+        @apply text-lg
+    }
+}
+@media (max-width: 400px) {
+    .h1__skills h1 {
+        @apply text-3xl
+    }
+    .container__skills {
+        @apply text-sm
+    }
+}

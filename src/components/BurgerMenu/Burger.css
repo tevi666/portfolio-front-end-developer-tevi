@@ -1,0 +1,27 @@
+.li__br__menu{
+    @apply flex justify-center p-5 hover:underline
+}
+#light .li__br__menu {
+    @apply text-gray-800
+}
+.btn__nav button {
+    @apply hover:text-gray-300 m-8 flex text-white mx-auto
+}
+#light .btn__nav button {
+    @apply text-gray-800
+}
+.close {
+    @apply absolute top-0 left-0 text-3xl text-white hover:text-gray-300 m-3
+}
+#light .close {
+    @apply text-gray-800
+}
+.langIcon {
+    @apply flex text-xl cursor-pointer absolute right-4 top-[18px] text-white
+}
+#light .langIcon {
+    @apply text-gray-800
+}
+.burgerLang {
+    @apply flex relative right-[-69px] top-[-40px]
+}

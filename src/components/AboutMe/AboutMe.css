@@ -1,0 +1,68 @@
+.border__el {
+    background-image: url(../../images/about-bg.jpg);
+    background-position: center left;
+    @apply border border-t-8 rounded-t-3xl w-[80%] h-[260px] mx-auto mt-2 rounded-b-3xl drop-shadow-2xl border-stone-800 p-5 overflow-scroll
+}
+#light .border__el {
+    background-image: url(../../images/about-light.jpg);
+    @apply border-none
+}
+#light .h1__about {
+    @apply text-green-500
+}
+#light h2, #light h3, #light .location {
+    @apply text-gray-800
+}
+
+.container__about {
+    @apply pt-[150px] text-white text-center flex justify-center mx-auto
+}
+
+.h1__about {
+    font-family: 'Rubik Burned', cursive;
+    @apply pl-2 text-yellow-100 text-5xl flex justify-center underline
+}
+
+h2,
+h3,
+.location {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-xl
+}
+
+.line {
+    animation: line 0.4s alternate ease infinite;
+    @apply relative text-white
+}
+#light .line {
+    animation: line 0.4s alternate ease infinite;
+    @apply relative text-gray-800
+}
+
+@keyframes line {
+    from {
+        transform: translateX(4px)
+    }
+
+    to {
+        transform: translateX(-1px)
+    }
+}
+
+.border__el h2 {
+    @apply pt-[20px]
+}
+
+@media(max-width: 815px) {
+    .border__el h1 {
+        @apply text-3xl
+    }
+    .border__el {
+        @apply h-[300px]
+    }
+}
+@media(max-width: 400px) {
+    .border__el h1 {
+        @apply text-2xl
+    }
+}

@@ -1,0 +1,47 @@
+.container__help__you {
+    @apply flex justify-center pt-[150px]
+}
+
+.h1__help__you {
+    font-family: 'Rubik Burned', cursive;
+    @apply text-4xl text-yellow-100 absolute underline text-5xl
+}
+#light .h1__help__you {
+    @apply text-green-100
+}
+
+.block {
+    @apply text-white pt-[50px] z-10
+}
+
+.h3__help__you {
+    font-family: 'Kelly Slab', cursive;
+    @apply flex p-2 items-center text-2xl
+}
+
+.h3__help__you span {
+    @apply text-2xl m-2
+}
+#light .h3__help__you span {
+    @apply text-gray-800
+}
+
+@media(max-width:815px) {
+    .container__help__you h1 {
+        @apply text-3xl
+    }
+    .container__help__you h3 {
+        @apply text-lg
+    }
+}
+@media(max-width:400px) {
+    .container__help__you h1 {
+        @apply text-2xl
+    }
+    .container__help__you h3 {
+        @apply text-sm
+    }
+    .h3__help__you span {
+        @apply text-lg
+    }
+}

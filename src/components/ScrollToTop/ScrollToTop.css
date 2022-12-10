@@ -1,0 +1,10 @@
+.scroll__to__top {
+    @apply z-20 opacity-100 transition-all ease-in-out p-1 rounded-full text-white bg-blue-600 text-3xl left-[20px] bottom-[5px] fixed animate-bounce 
+}
+#light .scroll__to__top {
+    @apply text-gray-800 bg-green-100 hover:text-green-100 hover:bg-gray-800 transition-all ease-in-out
+}
+
+.scroll__to__top:hover {
+    @apply bg-green-500 text-blue-500 animate-pulse
+}

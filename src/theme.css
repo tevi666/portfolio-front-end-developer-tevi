@@ -1,0 +1,40 @@
+/* Light mode */ 
+#light {
+    background-image: url(../src//images/lightMode1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    @apply text-black m-0 p-0 overflow-x-hidden
+}
+/* end */
+
+/* Dark mode */
+#dark {
+    background-image: url(../src//images/bg-body.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    @apply text-black m-0 p-0 overflow-x-hidden
+}
+/* end */
+
+/* btn */
+.switch {
+    @apply flex justify-end items-center pt-5 pr-[60px]
+}
+@media (max-width: 1087px) {
+    .switch {
+        @apply flex justify-end items-center pt-5 pr-3
+    }
+}
+#light .switch label {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-black pr-2
+}
+#dark .switch label {
+    font-family: 'Kelly Slab', cursive;
+    @apply text-white pr-2
+}
+/* end */
